@@ -10,19 +10,25 @@ public class helloTestTest {
 
     @Test
     public void getName() throws Exception {
-
+        helloTest newHello = new helloTest();
+        assertEquals("James",newHello.getName("James"));
     }
 
     @Test
     public void sqFunction() throws Exception {
-        helloTest preD = new helloTest("Joe");//some
-        assertEquals(25,preD.sqFunction(5));
+        helloTest cuadrado = new helloTest();//some
+        assertEquals(144,cuadrado.timesFunction(12,2));
     }
+
+
 
     @Test
     public void main() throws Exception {
-        helloTest preD = new helloTest("Joe");
-        assertEquals("Joe",preD.getName());
+
     }
 
+    @Test
+    public void addFunction() throws Exception {
+
+    }
 }
